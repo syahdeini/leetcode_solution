@@ -1,3 +1,7 @@
+#23.19 26-12-2019
+#https://leetcode.com/problems/palindrome-number/
+# A Syahdeini
+
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         x = str(x)
