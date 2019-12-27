@@ -1,7 +1,7 @@
 # 10:12 27-12-2019
 # https://leetcode.com/problems/palindrome-number/
 # A Syahdeini
-# Lame solution O(n^2)
+# Lame solution O(n*L) where L is the longest string in list(N)
 class Solution:
     
     def match(self, str_a, str_b):
