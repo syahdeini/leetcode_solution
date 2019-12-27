@@ -23,3 +23,22 @@ class Solution:
                 if not prefix:
                     return ""
         return prefix
+    
+    
+#Vertical scanning
+class Solution:
+
+    def compare(self, str1, str2):
+        try:
+            return str1.index(str2)
+        except:
+            return None
+
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        if len(strs)==0:
+            return ""
+        for idx, c in enumerate(strs[0]):
+            for _str in strs[1:]:
+                if idx==len(_str) or c!=_str[idx]:
+                    return strs[0][:idx]
+        return strs[0]
